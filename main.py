@@ -161,3 +161,19 @@ print(f"| {dessert:14} | {rem_amount_mint:8}  | {price_dessert:10} |")
 print("-" * szer)
 
 print("Suma zł:", price_sum)
+
+# ======================================
+print("=" * 25)
+
+print("Lista zakupów 2")
+
+expenditures = {
+    "piekarnia": ["chleb", "bułki", "pączek"],
+    "warzywniak": ["marchew", "seler", "rukola"]
+}
+
+for expenditure_name, expenditure in expenditures.items():
+    # print(f"Ide do {expenditure_name.capitalize()} i kupuję tu następujące rzeczy: {expenditure[0].capitalize()}")
+    print(f"Ide do {expenditure_name.capitalize()} i kupuję tu następujące rzeczy: {expenditure[0].capitalize()}, "
+          f"{expenditure[1].capitalize()}, {expenditure[2].capitalize()}")
+print(f"W sumie kupuję {len(expenditure) + len(expenditure)} produktów")
